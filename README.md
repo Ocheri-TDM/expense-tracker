@@ -28,7 +28,7 @@ cd expense-tracker
 
 ## Деплой
 
-GitHub Pages: https://<username>.github.io/expense-tracker/
+GitHub Pages: https://ocheri-tdm.github.io/expense-tracker/
 
 ## Что работает
 
