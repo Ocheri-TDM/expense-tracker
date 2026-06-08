@@ -4,6 +4,9 @@
 
 ## Скриншот
 
+Главная:
+
+<img width="1912" height="1076" alt="image" src="https://github.com/user-attachments/assets/aab13e27-8d4f-4e4f-8115-5c48cdd04561" />
 
 
 ## Стек
