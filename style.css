@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.total-card {
+  background: #111827;
+  color: white;
+  padding: 25px;
+  border-radius: 18px;
+  margin-bottom: 25px;
+}
+
+.total-card p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.total-card h2 {
+  margin: 10px 0 0;
+  font-size: 36px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input,
+select,
+button {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-card strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  border-radius: 14px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.expense-category {
+  font-weight: bold;
+}
+
+.expense-amount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #dc2626;
+}
+
+.delete-btn {
+  background: #ef4444;
+  padding: 10px 14px;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 14px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .expense-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

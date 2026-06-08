@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Трекер расходов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Трекер личных расходов</h1>
+
+  <div class="total-card">
+    <p>Общая сумма расходов</p>
+    <h2 id="totalAmount">0 ₸</h2>
+  </div>
+
+  <form id="expenseForm" class="form">
+    <select id="category" required>
+      <option value="Еда">Еда</option>
+      <option value="Транспорт">Транспорт</option>
+      <option value="Развлечения">Развлечения</option>
+      <option value="Подписки">Подписки</option>
+      <option value="Прочее">Прочее</option>
+    </select>
+
+    <input type="number" id="amount" placeholder="Сумма в ₸" min="1" required>
+    <input type="date" id="date" required>
+    <input type="text" id="description" placeholder="Описание">
+
+    <button type="submit">Добавить трату</button>
+  </form>
+
+  <h2>Сумма по категориям</h2>
+  <div id="categorySummary" class="summary"></div>
+
+  <h2>Все траты</h2>
+  <div id="emptyMessage" class="empty">Добавьте первую трату</div>
+  <div id="expenseList" class="expense-list"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
